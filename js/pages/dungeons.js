@@ -478,7 +478,7 @@ Site.ready({ name: 'dungeons', type: 'simulator', requires: ['translations_monst
         if (dungeon.id === 201) {
             return 0;
         } else {
-            return Calculations.experienceNextLevel(boss.level) / (dungeon.id === 203 ? 50 : 5);
+            return Calculations.experienceNextLevel(boss.level) / (dungeon.id === 203 || dungeon.id === 204 ? 50 : 5);
         }
     }
 
