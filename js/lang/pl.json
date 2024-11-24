@@ -15,6 +15,7 @@
         "class8": "Druid",
         "class9": "Bard",
         "class10": "Nekromanta",
+        "class11": "Paladin",
         "mask0": "Orzeł",
         "mask1": "Niedźwiedź",
         "mask2": "Kot",
@@ -102,40 +103,19 @@
         "attack0": "Normalny",
         "attack1": "Krytyczny",
         "attack2": "Katapulta",
-        "attack3": "Zablokowany",
-        "attack4": "Unik",
-        "attack5": "Atak pikujący",
-        "attack6": "Atak pikujący zablokowany",
-        "attack7": "Unik ataku pikującego",
-        "attack8": "Atak krytyczny zablokowany",
-        "attack9": "Atak krytyczny uniknięty",
-        "attack10": "Normalny",
-        "attack11": "Krytyczny",
-        "attack13": "Zablokowany",
-        "attack14": "Unik",
-        "attack18": "Atak krytyczny zablokowany",
-        "attack19": "Atak krytyczny uniknięty",
-        "attack15": "Ognista Kula",
-        "attack16": "Ognista kula zablokowana",
-        "attack20": "Normalny",
-        "attack21": "Krytyczny",
-        "attack23": "Zablokowany",
-        "attack24": "Unik",
-        "attack25": "Swoop Critical",
-        "attack28": "Atak krytyczny zablokowany",
-        "attack29": "Atak krytyczny uniknięty",
-        "attack30": "Minion Normalny",
-        "attack31": "Minion Krytyczny",
-        "attack33": "Minion Zablokowany",
-        "attack34": "Minion Uniknięty",
-        "attack38": "Minion Krytyczny Zablokowany",
-        "attack39": "Minion Krytyczny Uniknięty",
-        "attack100": "Wskrzeszenie",
-        "attack200": "Utwór Barda",
-        "attack331": "Przywałaj Szkieleta",
-        "attack311": "Wskrzeszenie Szkieleta",
-        "attack322": "Przywołaj Ogara",
-        "attack343": "Przywołaj Golema",
+        "attack10": "Fireball",
+        "attack11": "Minion Summon",
+        "attack12": "Minion",
+        "attack13": "Swoop",
+        "attack14": "Revive",
+        "attack15": "Minion Critical",
+        "attack16": "Swoop Critical",
+        "attack100": "Normal",
+        "attack101": "Critical",
+        "defense3": "Block",
+        "defense4": "Evade",
+        "defense5": "Magic block",
+        "defense6": "Block & Heal",
         "gt_background1": "Złoto",
         "gt_background2": "Srebro",
         "gt_background3": "Brąz",
@@ -973,7 +953,10 @@
             "bard_song": "Bard zagrał utwór",
             "necromancer_minion_1": "Przywołany Szkielet ma wpływ na gracza",
             "necromancer_minion_2": "Przywołany Ogar ma wpływ na gracza",
-            "necromancer_minion_3": "Przywołany Golem ma wpływ na gracza"
+            "necromancer_minion_3": "Przywołany Golem ma wpływ na gracza",
+            "paladin_stance_1": "Neutral",
+            "paladin_stance_2": "Defensive",
+            "paladin_stance_3": "Offensive"
         },
         "sidebar": {
             "toggles": {
@@ -1733,6 +1716,7 @@
     },
     "raids": {
         "result": "Chance to defeat raid: #{chance}%",
+        "footer#": "Special thanks to Eggman & everyone else who went through the pain of gathering raid data for the greater good",
         "raids": {
             "hellevator": "Hellevator Raid #{number}"
         }
@@ -1903,6 +1887,9 @@
         },
         "203": {
             "name": "Tornado"
+        },
+        "204": {
+            "name": "Sandstorm"
         }
     }
 }

@@ -15,6 +15,7 @@
         "class8": "Druide",
         "class9": "Barde",
         "class10": "Nécromancien",
+        "class11": "Paladin",
         "mask0": "Aigle",
         "mask1": "Ours",
         "mask2": "Tigre",
@@ -102,40 +103,19 @@
         "attack0": "Normale",
         "attack1": "Critique",
         "attack2": "Catapulte",
-        "attack3": "Bloqué",
-        "attack4": "Évadé",
-        "attack5": "Attaque en Piqué",
-        "attack6": "Attaque en piqué bloquée",
-        "attack7": "Attaque en piqué évitée",
-        "attack8": "Critique bloqué",
-        "attack9": "Critique évité",
-        "attack10": "Normale",
-        "attack11": "Critique",
-        "attack13": "Bloqué",
-        "attack14": "Évadé",
-        "attack18": "Critique bloqué",
-        "attack19": "Critique évité",
-        "attack15": "Boule de feu",
-        "attack16": "Boule de feu bloquée",
-        "attack20": "Normale",
-        "attack21": "Critique",
-        "attack23": "Bloqué",
-        "attack24": "Évadé",
-        "attack25": "Swoop Critical",
-        "attack28": "Critique bloqué",
-        "attack29": "Critique évité",
-        "attack30": "Minion normal",
-        "attack31": "Minion efficace",
-        "attack33": "Minion bloqué",
-        "attack34": "Minion évadé",
-        "attack38": "Minion efficace bloqué",
-        "attack39": "Minion efficace évadé",
-        "attack100": "Réanimer",
-        "attack200": "Chanson de barde",
-        "attack331": "Squelette invoqué",
-        "attack311": "Squelette ressuscité",
-        "attack322": "Chien invoqué",
-        "attack343": "Golem invoqué",
+        "attack10": "Fireball",
+        "attack11": "Minion Summon",
+        "attack12": "Minion",
+        "attack13": "Swoop",
+        "attack14": "Revive",
+        "attack15": "Minion Critical",
+        "attack16": "Swoop Critical",
+        "attack100": "Normal",
+        "attack101": "Critical",
+        "defense3": "Block",
+        "defense4": "Evade",
+        "defense5": "Magic block",
+        "defense6": "Block & Heal",
         "gt_background1": "Or",
         "gt_background2": "Argent",
         "gt_background3": "Bronze",
@@ -973,7 +953,10 @@
             "bard_song": "Bard has played a song",
             "necromancer_minion_1": "Summoned Skeleton is affecting the player",
             "necromancer_minion_2": "Summoned Hound is affecting the player",
-            "necromancer_minion_3": "Summoned Golem is affecting the player"
+            "necromancer_minion_3": "Summoned Golem is affecting the player",
+            "paladin_stance_1": "Neutral",
+            "paladin_stance_2": "Defensive",
+            "paladin_stance_3": "Offensive"
         },
         "sidebar": {
             "toggles": {
@@ -1733,6 +1716,7 @@
     },
     "raids": {
         "result": "Chance to defeat raid: #{chance}%",
+        "footer#": "Special thanks to Eggman & everyone else who went through the pain of gathering raid data for the greater good",
         "raids": {
             "hellevator": "Hellevator Raid #{number}"
         }
@@ -1903,6 +1887,9 @@
         },
         "203": {
             "name": "Tornade"
+        },
+        "204": {
+            "name": "Sandstorm"
         }
     }
 }

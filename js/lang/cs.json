@@ -15,6 +15,7 @@
         "class8": "Druid",
         "class9": "Bard",
         "class10": "Nekromant",
+        "class11": "Paladin",
         "mask0": "Orel",
         "mask1": "Medvěd",
         "mask2": "Kočka",
@@ -102,40 +103,19 @@
         "attack0": "Běžný",
         "attack1": "Kritický",
         "attack2": "Katapult",
-        "attack3": "Blokovaný",
-        "attack4": "Uhnout",
-        "attack5": "Střemhlavý útok",
-        "attack6": "Střemhlavý útok zablokován",
-        "attack7": "Střemhlavý útok vyhnut",
-        "attack8": "Kritický zásah zablokován",
-        "attack9": "Kritický zásah vyhnut",
-        "attack10": "Běžný",
-        "attack11": "Kritický zásah",
-        "attack13": "Blokovaný",
-        "attack14": "Zásah vyhnut",
-        "attack18": "Kritický zásah zablokován",
-        "attack19": "Kritický zásah vyhnut",
-        "attack15": "Tajemná kometa",
-        "attack16": "Tajemná kometa odražena",
-        "attack20": "Zásah",
-        "attack21": "Kritický",
-        "attack23": "Blokovaný",
-        "attack24": "Zásah vyhnut",
-        "attack25": "Swoop Critical",
-        "attack28": "Kritický zásah zablokován",
-        "attack29": "Kritický zásah vyhnut",
-        "attack30": "Minion normální",
-        "attack31": "Minion Kritický",
-        "attack33": "Minion Blokovaný",
-        "attack34": "Minion se Vyhnul",
-        "attack38": "Minion Kriticky Zablokoval",
-        "attack39": "Minion se Kriticky Vyhnul",
-        "attack100": "Oživit",
-        "attack200": "Melodie",
-        "attack331": "Vyvolat kostlivce",
-        "attack311": "Oživit kostlivce",
-        "attack322": "Vyvolat Psa",
-        "attack343": "Vyvolat golema",
+        "attack10": "Fireball",
+        "attack11": "Minion Summon",
+        "attack12": "Minion",
+        "attack13": "Swoop",
+        "attack14": "Revive",
+        "attack15": "Minion Critical",
+        "attack16": "Swoop Critical",
+        "attack100": "Normal",
+        "attack101": "Critical",
+        "defense3": "Block",
+        "defense4": "Evade",
+        "defense5": "Magic block",
+        "defense6": "Block & Heal",
         "gt_background1": "Zlato",
         "gt_background2": "Stříbrný",
         "gt_background3": "Bronz",
@@ -973,7 +953,10 @@
             "bard_song": "Bard has played a song",
             "necromancer_minion_1": "Summoned Skeleton is affecting the player",
             "necromancer_minion_2": "Summoned Hound is affecting the player",
-            "necromancer_minion_3": "Summoned Golem is affecting the player"
+            "necromancer_minion_3": "Summoned Golem is affecting the player",
+            "paladin_stance_1": "Neutral",
+            "paladin_stance_2": "Defensive",
+            "paladin_stance_3": "Offensive"
         },
         "sidebar": {
             "toggles": {
@@ -1733,6 +1716,7 @@
     },
     "raids": {
         "result": "Chance to defeat raid: #{chance}%",
+        "footer#": "Special thanks to Eggman & everyone else who went through the pain of gathering raid data for the greater good",
         "raids": {
             "hellevator": "Hellevator Raid #{number}"
         }
@@ -1903,6 +1887,9 @@
         },
         "203": {
             "name": "Tornádo"
+        },
+        "204": {
+            "name": "Sandstorm"
         }
     }
 }
