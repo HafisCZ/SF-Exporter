@@ -931,6 +931,7 @@
         "autofill": "Fill editable data in from predefined list",
         "analyze": "Statistical analysis",
         "gladiator": "Gladiator not reduced",
+        "armor": "Force armor to maximum value",
         "clear_changes": "Reset to original state",
         "simulate": "Open simulator with current data",
         "table": {

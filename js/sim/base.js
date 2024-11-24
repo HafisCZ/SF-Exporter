@@ -63,6 +63,7 @@ const FLAGS = Object.defineProperties(
     {
         // Values
         Gladiator15: false,
+        MaximumDamageReduction: false,
         // Reductions
         NoGladiatorReduction: false,
         NoAttributeReduction: false
@@ -672,6 +673,8 @@ class SimulatorModel {
     getDamageReduction (source, maximumReduction = this.Config.MaximumDamageReduction, flatBonusReduction = 0) {
         if (source.Config.BypassDamageReduction) {
             return 0;
+        } else if (FLAGS.MaximumDamageReduction) {
+            return this.Config.MaximumDamageReductionMultiplier * maximumReduction;
         } else {
             return this.Config.MaximumDamageReductionMultiplier * Math.min(maximumReduction + (this.Snack.MaximumDamageReductionBonus ?? 0), flatBonusReduction + this.Player.Armor / source.Player.Level);
         }

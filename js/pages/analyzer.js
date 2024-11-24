@@ -479,9 +479,19 @@ Site.ready({ name: 'analyzer', requires: ['translations_monsters'] }, function (
         renderToggles();
     })
 
+    $buttonArmor.click(() => {
+        FLAGS.set({
+            MaximumDamageReduction: !FLAGS.MaximumDamageReduction
+        });
+
+        updatePreview();
+        renderToggles();
+    })
+
     function renderToggles () {
         $buttonDamages[analyzerOptions.damages_sidebar ? 'addClass' : 'removeClass']('!text-orange');
         $buttonGladiator[FLAGS.NoGladiatorReduction ? 'addClass' : 'removeClass']('!text-orange');
+        $buttonArmor[FLAGS.MaximumDamageReduction ? 'addClass' : 'removeClass']('!text-orange');
     }
 
     renderToggles();
