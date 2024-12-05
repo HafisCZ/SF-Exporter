@@ -509,6 +509,7 @@
             "title": "Apply action to selected items",
             "hide": "Show / Hide",
             "remove": "Remove permanently",
+            "remove_current": "Remove current entry permanently",
             "link_players": "Merge / split characters",
             "link_groups": "Merge / split guilds",
             "unselect": "Deselect all"
