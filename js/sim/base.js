@@ -206,7 +206,9 @@ const CONFIG = Object.defineProperties(
             SkipChance: 0,
             SkipLimit: 999,
             SkipType: SKIP_TYPE_DEFAULT,
-            SkipVariant: DEFENSE_TYPE_NONE
+            SkipVariant: DEFENSE_TYPE_NONE,
+
+            PaladinDamageMultiplier: 1.5
         },
         Scout: {
             ID: SCOUT,
@@ -419,6 +421,7 @@ const CONFIG = Object.defineProperties(
             SkipType: SKIP_TYPE_DEFAULT,
             SkipVariant: DEFENSE_TYPE_NONE,
 
+            MageDamageMultiplier: 1.5,
             AssassinDamageMultiplier: 1,
             DruidDamageMultiplier: 1,
             
@@ -430,7 +433,7 @@ const CONFIG = Object.defineProperties(
                     DamageBonus: 0,
                     DamageReductionBonus: 0,
                     MaximumDamageReductionBonus: 0,
-                    SkipChance: 0,
+                    SkipChance: 0.3,
                     CriticalBonus: 0,
                     CriticalChance: 0.5,
                     CriticalChanceBonus: 0,
@@ -454,7 +457,7 @@ const CONFIG = Object.defineProperties(
                     DamageBonus: 0.42,
                     DamageReductionBonus: 0,
                     MaximumDamageReductionBonus: -25,
-                    SkipChance: 0,
+                    SkipChance: 0.25,
                     CriticalBonus: 0,
                     CriticalChance: 0.5,
                     CriticalChanceBonus: 0,
