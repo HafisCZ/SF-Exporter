@@ -46,7 +46,7 @@ class Synchronize
     LANGUAGE_LIST.each do |sftools_language, playa_language|
       FileUtils.mkdir_p("lang/#{sftools_language}")
 
-      strings = decode(self.class.get(format(PLAYA_TRANSLATION_URL, version: config['required_client_version_min'], language: playa_language)).body)
+      strings = decode(self.class.get(format(PLAYA_TRANSLATION_URL, version: config['required_client_version_min'][..3] + '00', language: playa_language)).body)
 
       monsters = strings.select { |key, _| key.match?(REGEXP_MONSTER) }
       monsters = monsters.map do |key, text|
