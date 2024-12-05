@@ -607,8 +607,8 @@ Site.ready({ name: 'dungeons', type: 'simulator', requires: ['translations_monst
             
             let pending = [];
             for (const { boss: _boss, dungeon: _dungeon } of availableBosses) {
-                if (_dungeon.id === 203) {
-                    // Ignore twister
+                if (_dungeon.id === 203 || _dungeon.id === 204) {
+                    // Ignore twister and sandstorm
                     continue;
                 }
 
