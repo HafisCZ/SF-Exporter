@@ -1196,7 +1196,7 @@ class DatabaseManager {
 
     static async #loadDatabase () {
         const beginTimestamp = Date.now();
-
+throw 'FUCK'
         // Open interface
         this.#interface = await DatabaseUtils.createSession(this.#profile.slot);
         if (!this.#interface) {
