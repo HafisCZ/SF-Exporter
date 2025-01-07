@@ -3195,6 +3195,16 @@ TABLE_EXPRESSION_CONFIG.register(
 )
 
 TABLE_EXPRESSION_CONFIG.register(
+  'header', 'public', 'Friendly Fire Frame',
+  {
+    expr: p => p.Flags?.FriendlyFireFrame,
+    format: 'boolean',
+    difference: false,
+    statistics: false
+  }
+)
+
+TABLE_EXPRESSION_CONFIG.register(
   'header', 'public', 'Official Creator',
   {
     expr: p => p.Flags?.OfficialCreator,
