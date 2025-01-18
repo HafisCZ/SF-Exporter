@@ -896,6 +896,9 @@ const StatisticsIntegration = new (class {
         // Buttons
         this.$poll = this.$parent.operator('poll');
         this.$poll.click(() => this.#poll());
+
+        this.$pollHide  = this.$poll.operator('hide');
+        this.$pollHide.click(this.#pollHide.bind(this));
         
         this.$importEndpoint = this.$parent.operator('import-endpoint');
         this.$importEndpoint.click(() => this.#importEndpoint());
@@ -926,7 +929,12 @@ const StatisticsIntegration = new (class {
     #html () {
         return `
             <div class="position-absolute left-8 top-8 z-2" style="width: 18em;">
-                <div class="ui fluid basic inverted button" data-op="poll"><i class="sync alternate icon"></i>${intl(`integration.poll.${this.type}`)}</div>
+                <div class="ui fluid basic inverted button" data-op="poll">
+                    <i class="sync alternate icon"></i>${intl(`integration.poll.${this.type}`)}
+                    <div data-op="hide" class="ui basic mini icon inverted button" style="position: absolute; right: 0; top: 0.4em; display: none;">
+                        <i class="ui x icon"></i>
+                    </div>
+                </div>
                 <div data-op="container" style="display: none;">
                     <div data-op="list"></div>
                     <div class="mt-2 flex">
@@ -1226,6 +1234,7 @@ const StatisticsIntegration = new (class {
             this.#generate();
 
             this.$container.show();
+            this.$pollHide.show();
         }).catch((e) => {
             Toast.error(intl('database.open_error.title'), intl('database.open_error.message'));
             Logger.error(e, `Database could not be opened! Reason: ${e.message}`);
@@ -1234,5 +1243,13 @@ const StatisticsIntegration = new (class {
         }).finally(function () {
             Loader.toggle(false);
         });
+    }
+
+    #pollHide (event) {
+        event.preventDefault();
+        event.stopPropagation();
+
+        this.$container.hide();
+        this.$pollHide.hide();
     }
 })
